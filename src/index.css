@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  transition: all 1s;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.ball {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 50%;
+  animation: size 1s infinite;
+  position: absolute;
+}
+
+@keyframes size {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
